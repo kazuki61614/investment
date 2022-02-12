@@ -13,6 +13,7 @@
 Route::get('/', 'PostController@index');
 Route::get('/posts', 'PostController@show');
 Route::get('/posts/create', 'PostController@create');
+Route::post('/posts', 'PostController@store');
 Route::get('/users', 'UserController@index');
 Route::get('/posts', 'CommentController@index');
 Route::get('/posts', 'LikeController@index');
